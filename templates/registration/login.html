@@ -1,0 +1,10 @@
+{%extend "base.html"%}
+
+{% blog content %}
+<h2>log in</h2>
+<from method="post">
+    {% csrf_token %}
+    {{from.as_h1}}
+    <button type="submit">Log in</button>
+</form>
+e{%ndblock content%}
